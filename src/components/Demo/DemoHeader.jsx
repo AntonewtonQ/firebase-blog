@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../../assets/medium.png";
 import { nav } from '../../data';
+import Auth from "./Auth/Auth";
 
 const DemoHeader = () => {
     const [isActive, setIsActive] = useState(false);
@@ -34,6 +35,7 @@ const DemoHeader = () => {
                 <div className='relative'>
                     <button className='hidden text-sm sm:flex items-center gap-5'>Sign in</button> 
                 </div>
+                <Auth />
                 <button className={` text-white px-3 p-2 rounded-full text-sm font-medium 
                     ${isActive ? "bg-green-700" : "bg-black"}`
                     }>
